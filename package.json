@@ -1,0 +1,11 @@
+{
+  "name": "regla_de_tres_simple",
+  "version": "1.0.0",
+  "description": "Calculadora de la regla de tres simple, para sacar calificaciones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
