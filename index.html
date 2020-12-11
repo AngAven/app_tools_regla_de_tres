@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>Regla de tres para calificaciones</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 
+<form action="" name="theform">
+    <label for="finalCalification">Calificación total:</label>
+    <input type="number" name="finalCalification" id="finalCalification" required>
+    <br>
+    <label for="totalCorrectAnswers">Número total de aciertos: </label>
+    <input type="number" name="totalCorrectAnswers" id="totalCorrectAnswers" required>
+    <br>
+    <label for="correctAnswers" >Número de aciertos del alumno: </label>
+    <input type="number" name="correctAnswers" id="correctAnswers" required>
+
+    <br>
+    <button id="calcular" type="submit">Calcular</button>
+    <button onclick="window.location.reload(true)">Nuevo cálculo</button>
+</form>
+
+<br>
+<br>
+<br>
+
+<table id="result">
+
+</table>
+
+<script src="index.js"></script>
 </body>
 </html>
