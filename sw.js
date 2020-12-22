@@ -24,8 +24,8 @@ async function precache(){
     const cache = await caches.open(VERSION)
     return cache.addAll([
                 './',
-                'index.html',
-                'index.css',
+                './index.html',
+                './index.css',
                 './assets/normalize.css',
                 './assets/index.js'
     ])
