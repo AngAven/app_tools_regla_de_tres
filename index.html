@@ -3,33 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Regla de tres para calificaciones</title>
+    <link rel="stylesheet" href="assets/normalize.css">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-
-<form action="" name="theform">
-    <label for="finalCalification">Calificación total:</label>
-    <input type="number" name="finalCalification" id="finalCalification" required>
-    <br>
-    <label for="totalCorrectAnswers">Número total de aciertos: </label>
-    <input type="number" name="totalCorrectAnswers" id="totalCorrectAnswers" required>
-    <br>
-    <label for="correctAnswers" >Número de aciertos del alumno: </label>
-    <input type="number" name="correctAnswers" id="correctAnswers" required>
-
-    <br>
-    <button id="calcular" type="submit">Calcular</button>
-    <button onclick="window.location.reload(true)">Nuevo cálculo</button>
-</form>
-
+<header class="header">
+<!--    <ul>
+        <li>Regla de tres</li>
+        <li>Regla de tres compuesta</li>
+        <li>Regla de tres inversa</li>
+    </ul>-->
+</header>
 <br>
-<br>
-<br>
+<main>
+    <form action="" name="theform">
+        <label for="finalCalification">Calificación total:</label>
+        <input type="number" name="finalCalification" id="finalCalification" required>
+        <br>
+        <label for="totalCorrectAnswers">Número total de aciertos: </label>
+        <input type="number" name="totalCorrectAnswers" id="totalCorrectAnswers" required>
+        <br>
+        <label for="correctAnswers" >Número de aciertos del alumno: </label>
+        <input type="number" name="correctAnswers" id="correctAnswers" required>
 
-<table id="result">
+        <br>
+        <button id="calcular" type="submit">Calcular</button>
+        <button onclick="window.location.reload(true)">Nuevo cálculo</button>
+    </form>
+    <table id="result" class="complete-result">
+    </table>
+</main>
 
-</table>
-
-<script src="index.js"></script>
+<!--<footer class="footer">
+    <ul>
+        <li>Contacto</li>
+        <li>Mas</li>
+        <li>Otros</li>
+    </ul>
+</footer>-->
+<script src="assets/index.js"></script>
 </body>
 </html>

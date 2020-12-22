@@ -2,7 +2,7 @@
   "name": "regla_de_tres",
   "version": "1.0.0",
   "description": "Calculadora de la regla de tres simple, para sacar calificaciones",
-  "main": "index.js",
+  "main": "assets/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/AngAven/regla_de_tres/issues"
   },
-  "homepage": "https://github.com/AngAven/regla_de_tres#readme"
+  "homepage": "https://github.com/AngAven/regla_de_tres#readme",
+  "dependencies": {}
 }
