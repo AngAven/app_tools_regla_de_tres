@@ -2,45 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Regla de tres para calificaciones</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
 <header class="header">
-<!--    <ul>
-        <li>Regla de tres</li>
+    <h1>Regla de tres</h1>
+    <!--<ul class="menu">
+        <li>Calcular calificaciones</li>
         <li>Regla de tres compuesta</li>
         <li>Regla de tres inversa</li>
     </ul>-->
 </header>
-<br>
-<main>
-    <form action="" name="theform">
-        <label for="finalCalification">Calificación total:</label>
-        <input type="number" name="finalCalification" id="finalCalification" required>
-        <br>
-        <label for="totalCorrectAnswers">Número total de aciertos: </label>
-        <input type="number" name="totalCorrectAnswers" id="totalCorrectAnswers" required>
-        <br>
-        <label for="correctAnswers" >Número de aciertos del alumno: </label>
-        <input type="number" name="correctAnswers" id="correctAnswers" required>
+<main class="main">
+    <div class="variables">
+        <span class="total-points">
+            <label for="totalCorrectAnswers">Número total de aciertos: </label>
+            <input  name="totalCorrectAnswers" id="totalCorrectAnswers" placeholder="Ej. 100" required>
+        </span>
+        <span class="final-calification">
+            <label for="finalCalification">Calificación final:</label>
+            <input  name="finalCalification" id="finalCalification"  placeholder="Ej. 10" required>
+        </span>
+        <span class="student-points">
+            <label for="correctAnswers" >Número de aciertos del alumno: </label>
+            <input  name="correctAnswers" id="correctAnswers" placeholder="Ej. 80">
+        </span>
+        <span class="student-calification">
 
-        <br>
+        </span>
         <button id="calcular" type="submit">Calcular</button>
-        <button onclick="window.location.reload(true)">Nuevo cálculo</button>
-    </form>
-    <table id="result" class="complete-result">
-    </table>
+        <button id="reload" onclick="window.location.reload(true)">Nuevo cálculo</button>
+    </div>
+    <div class="result">
+        <table id="result">
+
+        </table>
+    </div>
 </main>
 
-<!--<footer class="footer">
+<footer class="footer">
     <ul>
-        <li>Contacto</li>
+        <!--<li>Contacto</li>
         <li>Mas</li>
-        <li>Otros</li>
+        <li>Otros</li>-->
     </ul>
-</footer>-->
+</footer>
 <script src="assets/index.js"></script>
 </body>
 </html>

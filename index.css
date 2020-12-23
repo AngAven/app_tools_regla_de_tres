@@ -1,3 +1,123 @@
+body{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    background-color: #248ea9;
+    color: white;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: minmax(25px, 30px) minmax(408px, 1fr) minmax(25px, 30px);
+}
+h1{
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+}
+.header{
+    grid-area: header;
+    text-align: center;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+li{
+    display: inline-block;
+ }
+.main{
+    padding: 1em;
+    grid-area: main;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "variables" "result";
+    grid-template-rows: minmax(100px, 200px) minmax(200px, 1fr);
+}
+.variables{
+    grid-area: variables;
+    display: grid;
+    grid-template-areas: "total-points final-calification"
+                         "student-points student-calification"
+                         "button-calc button-reload";
+}
+input{
+    width: 90%;
+    height: 30px;
+    background-color: #248ea9;
+    color: #fafdcb;;
+    border: none;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+input[type="number"]{
+
+}
+.final-calification{
+    grid-area: final-calification;
+    display: inline-grid;
+    align-items: center;
+}
+.total-points{
+    grid-area: total-points;
+    display: inline-grid;
+    align-items: center;
+}
+.student-points{
+    grid-area: student-points;
+    display: inline-grid;
+    align-items: center;
+}
+.student-calification{
+    grid-area: student-calification;
+    display: inline-grid;
+    align-items: center;
+}
+button{
+    background-color: #aee7e8;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    cursor: pointer;
+    color: #248ea9;
+    font-size: 18px;
+}
+#calcular{
+    grid-area: button-calc;
+}
+#reload{
+    grid-area: button-reload;
+}
+.result{
+    overflow-y: scroll;
+}
+table{
+    width: 100%;
+    border-spacing: 0;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+    text-align: center;
+}
+.footer{
+    grid-area: footer;
+    font-size: 12px;
+}
 .specific{
-    color: red;
+    color: #fafdcb;
+    font-size: 1.3em;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 20px;
+        grid-template-rows: 80px 1fr 80px;
+    }
+    .main{
+
+    }
+    .result{
+
+    }
 }
