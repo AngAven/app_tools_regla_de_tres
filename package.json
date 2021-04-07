@@ -4,7 +4,8 @@
   "description": "Calculadora de la regla de tres simple, para sacar calificaciones",
   "main": "assets/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
   },
   "author": "@angaven",
   "license": "ISC",
@@ -16,5 +17,7 @@
     "url": "https://github.com/AngAven/regla_de_tres/issues"
   },
   "homepage": "https://github.com/AngAven/regla_de_tres#readme",
-  "dependencies": {}
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
 }
