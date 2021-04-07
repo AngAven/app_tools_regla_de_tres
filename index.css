@@ -2,6 +2,8 @@ body{
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     height: 100vh;
+    width: 80vw;
+    margin: auto;
     background-color: #248ea9;
     color: white;
     display: grid;
@@ -112,6 +114,13 @@ td, th {
     font-size: 1.3em;
 }
 
+@media (max-width: 768px) {
+    body{
+        width: 100vw;
+        margin: 0;
+    }
+}
+
 @media (min-width: 768px) {
     body{
         font-size: 20px;
@@ -124,3 +133,4 @@ td, th {
 
     }
 }
+

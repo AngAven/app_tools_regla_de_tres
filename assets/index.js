@@ -42,7 +42,9 @@ function start(){
             .appendChild(tableItem)
     }
 
-    document.querySelector('.specific').scrollIntoView()
+    if (document.querySelector('.specific')){
+        document.querySelector('.specific').scrollIntoView()
+    }
 }
 
 if ('serviceWorker' in navigator) {
